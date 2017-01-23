@@ -1,0 +1,174 @@
+<lessons>
+  <unit type="normal" theme="" level="0">
+    <title>Le&#231;on 01: Tu vas bien?</title>
+    <title_zh>&#31532;&#19968;&#35506;: &#20320;&#22909;&#21966; ?</title_zh>
+    <title_zh>&#31532;&#19968;&#35506;: &#20320;&#22909;&#21966; ?</title_zh>
+    <title_zh>&#26032;&#30340;&#35506;&#31243;</title_zh>
+    <content_fr><item><index>0</index><content>Bonjour, Annie! Tu vas bien?</content></item><item><index>1</index><content>-Oui, &#231;a va. Mais je n'ai pas beaucoup de temps. Je vais au travail.</content></item><item><index>2</index><content>O&#249; travailles-tu?</content></item><item><index>3</index><content>-Je travaille dans une biblioth&#232;que.</content></item><item><index>4</index><content>-Donc tu vends des livres?</content></item><item><index>5</index><content>-Non, dans une biblioth&#232;que, les gens lisent des livres, mais ils n'ach&#232;tent pas de livres.</content></item><item><index>6</index><content>-La biblioth&#232;que est loin d'ici?</content></item><item><index>7</index><content>-Non, c'est juste &#224; cot&#233;. Tu ne vas pas travailler, toi?</content></item><item><index>8</index><content>Non, pas maintenant. Je travaille le soir.</content></item><item><index>9</index><content>Donc, pendant la journ&#233;e, tu dors?</content></item><item><index>10</index><content>Oui, je vais dormir maintenant! Bonne journ&#233;e!</content></item></content_fr>
+    <content_zh><item><index>0</index><content>Annie, &#26085;&#23433;&#65281; &#20320;&#22909;&#21966;&#65311;</content></item><item><index>1</index><content>-&#24456;&#22909;&#12290; &#20294;&#26159;&#25105;&#27794;&#26377;&#24456;&#22810;&#26178;&#38291;&#12290;&#25105;&#21435;&#19978;&#29677;&#20102;&#12290;</content></item><item><index>2</index><content>&#22963;&#22312;&#21738;&#35023;&#24037;&#20316;&#65311;</content></item><item><index>3</index><content>&#25105;&#22312;&#22294;&#26360;&#39208;&#24037;&#20316;&#12290;</content></item><item><index>4</index><content>&#25152;&#20197;&#22963;&#26159;&#36067;&#26360;&#30340;&#21966;&#65311;</content></item><item><index>5</index><content>&#27794;&#26377;&#65292; &#22312;&#22294;&#26360;&#39208;&#20154;&#26159;&#20358;&#30475;&#26360;&#30340;&#12290;&#20294;&#26159;&#20182;&#20497;&#19981;&#26159;&#20358;&#36023;&#26360;&#30340;&#12290;</content></item><item><index>6</index><content>&#22294;&#26360;&#39208;&#38626;&#36889;&#35023;&#24456;&#36960;&#21966;&#65311;</content></item><item><index>7</index><content>&#27794;&#26377;&#65292; &#23601;&#22312;&#26049;&#37002;&#32780;&#24050;&#12290;&#20320;&#20063;&#19981;&#21435;&#19978;&#29677;&#21966;&#65311; </content></item><item><index>8</index><content>&#35211;&#22312;&#27794;&#26377;&#65292; &#25105;&#26159;&#26202;&#19978;&#25165;&#19978;&#36774;&#30340;&#12290;</content></item><item><index>9</index><content>&#25152;&#20197;&#65292;&#30333;&#22825;&#20320;&#26159;&#12290;&#12290;&#22312;&#30561;&#35258;&#21966;&#65311;</content></item><item><index>10</index><content>&#23565;&#65292; &#25105;&#24819;&#22312;&#35201;&#21435;&#30561;&#65281; &#25308;&#25308;&#65281;</content></item></content_zh>
+    <activity_list><activity type="multiplechoices" index="0"><title>Le&#231;on 01</title><title_zh>&#31532;&#19968;&#35506;</title_zh><wave index="0" order="1,2,0,3" type="order" spd="3"><title>&#35531;&#25490;&#24207;&#65306;&#8220;&#25105;&#27794;&#26377;&#24456;&#22810;&#26178;&#38291;&#8221;
+
+</title><hint>"pas" &#26159;&#25918;&#22312;&#21205;&#35422;&#30340;&#23614;&#24052;</hint><info>None</info><item index="0">pas
+
+</item><item index="1">beaucoup
+
+</item><item index="2">je n'ai
+
+</item><item index="3">de temps
+
+</item></wave><wave index="1" correct="3" type="multiplechoices" spd="4"><title>&#20160;&#40636;&#26159;"librairie?"
+
+</title><hint>&#36319;&#33521;&#25991;&#19981;&#19968;&#27171;&#12290;</hint><info>None</info><item index="0">&#22294;&#26360;&#39208;
+
+</item><item index="1">*
+
+</item><item index="2">*
+
+</item><item index="3">&#26360;&#24215;
+
+</item></wave><wave index="2" correct="1" type="multiplechoices" spd="2"><title>"beaucoup"&#26159;&#20160;&#40636;&#24847;&#24605;&#65311;
+
+</title><hint>None</hint><info>None</info><item index="0">&#24456;&#24613;
+
+</item><item index="1">&#24456;&#22810;
+
+</item><item index="2">&#24456;&#23569;
+
+</item><item index="3">&#24456;&#38627;
+
+</item></wave><wave index="3" order="2,3,0,1" type="order" spd="3"><title>&#35531;&#25490;&#24207;&#65306;&#24478;&#26368;&#22810;&#21040;&#26368;&#23569;&#65281;
+
+</title><hint>&#25105;&#36023;&#20102;&#22826;&#22810;&#26481;&#35199;&#65281;J'ai achet&#233; trop de choses!</hint><info>un peu = &#19968;&#40670;&#40670;&#65292; rien = &#20160;&#40636;&#37117;&#27794;&#26377;</info><item index="0">un peu
+
+</item><item index="1">rien
+
+</item><item index="2">trop
+
+</item><item index="3">beaucoup
+
+</item></wave><wave index="4" correct="3" type="multiplechoices" spd="1"><title>&#27861;&#25991;&#20351;&#29992;&#21738;&#19968;&#20491;&#21205;&#35422;&#20358;&#21839;&#21029;&#20154;&#22909;&#19981;&#22909;&#65311; 
+
+</title><hint>Tu vas bien ?</hint><info>aller = je vais, tu vas, ils vont</info><item index="0">avoir
+
+</item><item index="1">&#234;tre
+
+</item><item index="2">faire
+
+</item><item index="3">aller
+
+</item></wave><wave index="5" correct="2" type="multiplechoices" spd="4"><title>&#35531;&#21839;&#8221;travailler"&#26159;&#23660;&#26044;&#21738;&#32068;&#21205;&#35422;&#65311;
+
+</title><hint> -er &#32068; &#26159;&#26368;&#24120;&#35211;&#30340;&#12290;&#36914;&#20358;&#27861;&#25991;&#30340;&#26032;&#21205;&#35422;&#37117;&#26159;-er&#32068;&#12290;</hint><info>4&#232;me&#19981;&#23384;&#22312;&#12290;3&#232;me&#26159;&#19981;&#35215;&#21063;&#21205;&#35422;&#12290;2&#232;me&#26159;-ir&#21205;&#35422;&#65292;&#26371;&#20986;&#29694;&#8220;iss&#8221;&#30340;&#37027;&#31278;&#12290;</info><item index="0">3&#232;me groupe
+
+</item><item index="1">2&#232;me groupe
+
+</item><item index="2">1er groupe
+
+</item><item index="3">4&#232;me groupe
+
+</item></wave><wave index="6" order="0,3,2,1" type="order" spd="1"><title>&#35531;&#20320;&#25353;&#29031;&#24490;&#24207;&#22238;&#31572;&#65281;(1) O&#249; travailles-tu?(2) Que fais-tu?(3)Quand viens-tu?(4)Qui es-tu?
+
+</title><hint>qui = &#35504;&#65292; que = &#20160;&#40636;&#65292; quand = &#20160;&#40636;&#26178;&#20505;&#65292; o&#249;=&#21738;&#35023;</hint><info>None</info><item index="0">dans une librairie.
+
+</item><item index="1">je  suis Michel, et toi?
+
+</item><item index="2">demain
+
+</item><item index="3">je dors!
+
+</item></wave><wave index="7" correct="3" type="multiplechoices" spd="1"><title>"Que voulez-vous manger?"&#35531;&#21839;&#65292;&#21738;&#19968;&#20491;&#19981;&#26159;&#27491;&#30906;&#30340;&#22238;&#31572;&#65311;
+
+</title><hint>&#36889;&#35023;&#37679;&#35492;&#22312;&#25991;&#27861;&#19978;&#12290;</hint><info>je veux ne pas &#26159;&#37679;&#30340;&#12290; &#25033;&#35442;&#26159; je ne veux pas. (ne &#19968;&#23450;&#26159;&#22312;&#21205;&#35422;&#21069;&#38754;&#65289;</info><item index="0">Je veux du pain!
+
+</item><item index="1">Je veux de la salade!
+
+</item><item index="2">Je ne veux rien!
+
+</item><item index="3">Je veux ne pas de viande!
+
+</item></wave><wave index="8" correct="2" type="multiplechoices" spd="1"><title>&#21738;&#19968;&#20491;&#21629;&#20196;&#24335;&#26159;&#37679;&#30340;&#65311;
+&#36039;&#26009;&#65306;&#21205;&#35422;&#30340;&#19981;&#23450;&#24335;&#26159;&#35201;&#27714;"ne"+ "pas" &#26159;&#25918;&#22312;&#21069;&#38754;&#12290;
+
+</title><hint>None</hint><info>None</info><item index="0">Ne pas deranger!
+(&#35531;&#21247;&#25171;&#25854;&#65289;
+
+</item><item index="1">Ne mangez pas&#65281;
+&#65288;&#35531;&#21029;&#21507;&#65289;
+
+</item><item index="2">Ne pas dormez!
+(&#35531;&#21029;&#30561;&#35258;&#65289;
+
+</item><item index="3">Ne pas vomir ici!&#65288;&#35531;&#28961;&#27492;&#22303;&#65289;
+
+</item></wave><wave index="9" order="0,1,2,3" type="order" spd="1"><title>&#35531;&#25490;&#24207;&#65306;&#24478;&#26368;&#38627;&#30475;&#21040;&#26368;&#28418;&#20142;&#12290;
+
+</title><hint>moche&#26159;&#24456;&#26222;&#36941;&#65292;&#24456;&#21475;&#35486;&#30340;&#24418;&#23481;&#35422;&#12290;&#23427;&#30340;&#24847;&#24605;&#26159;&#24456;&#38627;&#30475;&#12290;charmant&#26159;&#8221;&#36855;&#20154;&#30340;&#8220;&#30340;&#24847;&#24605;&#12290;</hint><info>None</info><item index="0">beau
+
+</item><item index="1">charmant
+
+</item><item index="2">horrible
+
+</item><item index="3">moche
+
+</item></wave><wave index="10" correct="0,1" type="multiplechoices" spd="1"><title>O&#249; vas-tu?(&#22810;&#36984;)
+</title><hint>"en"&#30340;&#29992;&#27861;(1)en + &#22320;&#40670; =&#21040;&#37027;&#20491;&#22320;&#26041; (2)en + &#20132;&#36890;&#24037;&#20855;=&#29992;&#20160;&#40636;&#24037;&#20855;&#20570;&#20160;&#40636;&#20107;&#24773;</hint><info></info><item index="0">Je vais au bar.
+</item><item index="1">Je vais en France.
+</item><item index="2">Je vais en voiture
+</item><item index="3">Je vais en caravane.
+</item></wave><wave index="11" correct="0" type="multiplechoices" spd="3"><title>mettre "sous" la table. "sous"&#26159;&#20160;&#40636;&#24847;&#24605;&#65311;
+</title><hint></hint><info></info><item index="0">&#65288;&#25918;&#65289;&#22312;&#12290;&#12290;&#20043;&#19979;
+</item><item index="1">&#65288;&#25918;&#65289;&#22312;&#12290;&#12290;&#20043;&#38291;
+</item><item index="2">&#65288;&#25918;&#65289;&#22312;&#12290;&#12290;&#30340;&#26049;&#37002;
+</item><item index="3">&#65288;&#25918;&#65289;&#22312;&#12290;&#12290;&#20043;&#21069;
+</item></wave><wave index="12" correct="2" type="multiplechoices" spd="4"><title>"vers"&#26159;&#20160;&#40636;&#24847;&#24605;&#65311;
+</title><hint></hint><info></info><item index="0">&#26479;&#23376;
+</item><item index="1">&#29627;&#29827;
+</item><item index="2">&#24448;, &#26397;&#21521;
+</item><item index="3">*
+</item></wave><wave index="13" correct="3" type="multiplechoices" spd="1"><title>&#21738;&#19968;&#20491;&#19981;&#21512;&#36969;&#65311;
+</title><hint>aller</hint><info></info><item index="0">je vais
+</item><item index="1">vous allez
+</item><item index="2">tu vas
+</item><item index="3">il viens
+</item></wave><wave index="14" order="2,3,0,1" type="order" spd="4"><title>&#24478;&#26368;&#21769;&#21040;&#26368;&#39640;&#65281;
+</title><hint></hint><info></info><item index="0">un g&#233;ant
+</item><item index="1">une plan&#232;te
+</item><item index="2">un b&#233;b&#233;
+</item><item index="3">un humain
+</item></wave><wave index="15" correct="2" type="multiplechoices" spd="2"><title>maintenant, ce n'est pas:
+</title><hint>tout de suite=&#39340;&#19978;&#65292; &#224; cet instant=&#22312;&#27492;&#26178;</hint><info></info><item index="0">tout de suite
+</item><item index="1">&#224; cet instant
+</item><item index="2">tout &#224; l'heure
+</item><item index="3">*
+</item></wave><wave index="16" correct="0" type="multiplechoices" spd="1"><title>Ils ... ( faire ) &#65288;&#29694;&#22312;&#26178;)
+</title><hint></hint><info></info><item index="0">font
+</item><item index="1">fairent
+</item><item index="2">faient
+</item><item index="3">fent
+</item></wave><wave index="17" correct="2" type="multiplechoices" spd="3"><title>Ils ... ( aller ) &#65288;&#29694;&#22312;&#26178;)
+</title><hint>"aller"&#26159;&#29234;&#19968;&#20491;&#19981;&#35215;&#21063;&#21205;&#35422;&#26377;&#19981;&#23450;&#24335;&#29234;-er</hint><info></info><item index="0">allons
+</item><item index="1">allent
+</item><item index="2">vont
+</item><item index="3">vaient
+</item></wave><wave index="18" correct="0" type="multiplechoices" spd="5"><title>"&#36889;&#24456;&#36960;"&#65306;
+</title><hint></hint><info></info><item index="0">C'est loin!
+</item><item index="1">C'est proche!
+</item><item index="2">C'est profond!
+</item><item index="3">*
+</item></wave><wave index="19" correct="1" type="multiplechoices" spd="5"><title>"&#36889;&#24456;&#36817;&#8221;&#65306;
+</title><hint></hint><info></info><item index="0">C'est loin!
+</item><item index="1">C'est proche!
+</item><item index="2">C'est profond!
+</item><item index="3">*
+</item></wave><wave index="20" correct="2" type="multiplechoices" spd="5"><title>"&#36889;&#24456;&#28145;&#8220;&#65306;
+</title><hint></hint><info></info><item index="0">C'est loin!
+</item><item index="1">C'est proche!
+</item><item index="2">C'est profond!
+</item><item index="3">*
+</item></wave><wave index="21" correct="0" type="multiplechoices" spd="1"><title>&#23565;
+</title><hint></hint><info></info><item index="0">Correct
+</item><item index="1">Faux
+</item><item index="2">*
+</item><item index="3">*
+</item></wave></activity></activity_list><vocabulary><item index="0"><wid>222,102</wid><tid>1470</tid></item><item index="1"><wid>251,101</wid><tid>56</tid></item><item index="2"><wid>5,102</wid><tid>77</tid></item><item index="3"><wid>223,101</wid><tid>141</tid></item><item index="4"><wid>440,101</wid><tid>548</tid></item><item index="5"><wid>81,101</wid><tid>77</tid></item><item index="6"><wid>17,101</wid><tid>271</tid></item><item index="7"><wid>72,102</wid><tid>219</tid></item><item index="8"><wid>84,105</wid><tid>674</tid></item><item index="9"><wid>324,105</wid><tid>1688</tid></item><category>no</category></vocabulary><explanation/></unit>
+</lessons>

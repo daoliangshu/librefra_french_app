@@ -1,0 +1,81 @@
+<root>
+  <category>economy</category>
+  <vocabulary>
+    <item index="0">
+      <wid>232,102</wid>
+      <tid>1749</tid>
+    </item>
+    <item index="1">
+      <wid>72,102</wid>
+      <tid>219</tid>
+    </item>
+    <item index="2">
+      <wid>17,101</wid>
+      <tid>271</tid>
+    </item>
+    <item index="3">
+      <wid>233,102</wid>
+      <tid>1750,1751</tid>
+    </item>
+    <item index="4">
+      <wid>575,101</wid>
+      <tid>1077</tid>
+    </item>
+    <item index="5">
+      <wid>339,105</wid>
+      <tid>1752</tid>
+    </item>
+    <item index="6">
+      <wid>345,105</wid>
+      <tid>1759</tid>
+    </item>
+    <item index="7">
+      <wid>340,105</wid>
+      <tid>1753</tid>
+    </item>
+    <item index="8">
+      <wid>344,105</wid>
+      <tid>1757</tid>
+    </item>
+    <item index="9">
+      <wid>342,105</wid>
+      <tid>1755</tid>
+    </item>
+    <item index="10">
+      <wid>149,102</wid>
+      <tid>1076</tid>
+    </item>
+    <item index="11">
+      <wid>73,101</wid>
+      <tid>165</tid>
+    </item>
+    <item index="12">
+      <wid>173,101</wid>
+      <tid>1078,1079</tid>
+    </item>
+    <item index="13">
+      <wid>147,102</wid>
+      <tid>1073</tid>
+    </item>
+    <item index="14">
+      <wid>343,105</wid>
+      <tid>1756</tid>
+    </item>
+    <item index="15">
+      <wid>288,101</wid>
+      <tid>129</tid>
+    </item>
+    <item index="16">
+      <wid>148,102</wid>
+      <tid>1075</tid>
+    </item>
+    <item index="17">
+      <wid>254,101</wid>
+      <tid>53</tid>
+    </item>
+    <category>economy</category>
+    <title_fr>magasin</title_fr>
+    <title_zh>&#21830;&#24215;</title_zh>
+    <level>0</level>
+  </vocabulary>
+</root>

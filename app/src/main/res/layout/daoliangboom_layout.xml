@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/game_layout">
+
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ViewFlipper
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.125"
+                    android:background="@color/darkdarkdarkBlue"
+                    android:id="@+id/dlb_head_flipper"
+                    android:orientation="horizontal">
+                    <!-- Left-top layout displaying word informations -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/mur1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.55"
+                            android:orientation="vertical">
+                            <!-- Component displaying the current word to guess -->
+                            <TextView
+                                android:id="@+id/dlb_word_to_guess"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:textColor="@color/lightPink"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:textSize="23sp" />
+                            <!-- Component displaying the translation of the current word -->
+                            <TextView
+                                android:id="@+id/dlb_trans_of_word"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:textColor="@color/lightPurple"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:textSize="23sp" />
+                        </LinearLayout>
+                        <!-- Top-right layout displaying score and time -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/dlb_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.5"
+                                android:textColor="@color/lightGrey"
+                                android:textSize="23sp" />
+                            <!-- Component displaying the score -->
+                            <TextView
+                                android:id="@+id/dlb_score"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:textColor="@color/lightYellow"
+                                android:layout_weight="0.5"
+                                android:textSize="23sp" />
+                        </LinearLayout>
+                        <!-- Display right-most buttons ( back ) -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.15"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/dlb_settings"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.8"
+                                android:background="@android:drawable/ic_menu_preferences"
+                                android:gravity="center"
+                                android:textSize="23sp" />
+
+                            <!-- Hint display button -->
+                            <Button
+                                android:id="@+id/dlb_show_hint_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.8"
+                                android:background="@android:drawable/ic_menu_help"
+                                android:gravity="center"
+                                android:textSize="23sp"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- Displaying Speed control -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/mur1"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroupSpeed"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:checkedButton="@+id/radio_slow">
+
+                            <RadioButton
+                                android:id="@id/radio_slow"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/rbtn_selector1"
+                                android:button="@null"
+                                android:checked="true"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/spd_slow"
+                                android:textColor="@drawable/rbtn_textcolor_selector" />
+
+                            <RadioButton
+                                android:id="@+id/radio_medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/rbtn_selector1"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/spd_medium"
+                                android:textColor="@drawable/rbtn_textcolor_selector" />
+
+                            <RadioButton
+                                android:id="@+id/radio_fast"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/rbtn_selector1"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/spd_rapid"
+                                android:textColor="@drawable/rbtn_textcolor_selector" />
+                        </RadioGroup>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dlb_back"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@android:drawable/ic_menu_directions" />
+                    </LinearLayout>
+                    <!-- Displaying hints -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/mur1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width='0dp'
+                            android:layout_height='match_parent'
+                            android:layout_weight='0.8'
+                            android:textSize="26sp"
+                            android:textColor="@color/lightCoral"
+                            android:textStyle="italic"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:scrollbars="vertical"
+                            android:fillViewport="true"
+                            android:id="@+id/textview_hint"
+                            android:background="@drawable/mur1"
+                            android:orientation='vertical'>
+
+                        </TextView>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dlb_back2"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@android:drawable/ic_menu_directions" />
+                    </LinearLayout>
+                </ViewFlipper>
+
+                <com.librefra.daoliangshu.librefra.daoliangboom.TirAChoixView
+                    android:id="@+id/boom_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.875" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dlb_game_over_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/darkdarkdarkBlue"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/librefra_logo_big" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:background="@drawable/mur1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:paddingRight="15dp"
+                    android:text="@string/score"
+                    android:textColor="@color/lightGrey"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/dlb_score_gameover"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/lightGreen"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="@color/darkdarkdarkBlue"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/dlb_quit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:layout_margin="3dp"
+                android:background="@drawable/button_floral_yellow"
+                android:text="@string/game_over"
+                android:textSize="23sp" />
+
+            <Button
+                android:id="@+id/dlb_retry_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_floral_yellow"
+                android:text="@string/retry"
+                android:textSize="23sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

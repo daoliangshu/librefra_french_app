@@ -1,0 +1,97 @@
+<root>
+  <category>time</category>
+  <vocabulary>
+    <item index="0">
+      <wid>911,101</wid>
+      <tid>1667</tid>
+    </item>
+    <item index="1">
+      <wid>394,101</wid>
+      <tid>454</tid>
+    </item>
+    <item index="2">
+      <wid>913,101</wid>
+      <tid>1670</tid>
+    </item>
+    <item index="3">
+      <wid>849,101</wid>
+      <tid>1587</tid>
+    </item>
+    <item index="4">
+      <wid>45,101</wid>
+      <tid>20</tid>
+    </item>
+    <item index="5">
+      <wid>284,101</wid>
+      <tid>651</tid>
+    </item>
+    <item index="6">
+      <wid>903,101</wid>
+      <tid>1660</tid>
+    </item>
+    <item index="7">
+      <wid>908,101</wid>
+      <tid>1664</tid>
+    </item>
+    <item index="8">
+      <wid>513,101</wid>
+      <tid>986</tid>
+    </item>
+    <item index="9">
+      <wid>910,101</wid>
+      <tid>1666</tid>
+    </item>
+    <item index="10">
+      <wid>43,101</wid>
+      <tid>282,283</tid>
+    </item>
+    <item index="11">
+      <wid>44,101</wid>
+      <tid>285,286</tid>
+    </item>
+    <item index="12">
+      <wid>46,101</wid>
+      <tid>21</tid>
+    </item>
+    <item index="13">
+      <wid>882,101</wid>
+      <tid>1630</tid>
+    </item>
+    <item index="14">
+      <wid>502,101</wid>
+      <tid>917</tid>
+    </item>
+    <item index="15">
+      <wid>888,101</wid>
+      <tid>1640</tid>
+    </item>
+    <item index="16">
+      <wid>897,101</wid>
+      <tid>1649</tid>
+    </item>
+    <item index="17">
+      <wid>308,105</wid>
+      <tid>1632</tid>
+    </item>
+    <item index="18">
+      <wid>309,105</wid>
+      <tid>1633</tid>
+    </item>
+    <item index="19">
+      <wid>307,105</wid>
+      <tid>1631</tid>
+    </item>
+    <item index="20">
+      <wid>311,105</wid>
+      <tid>1654</tid>
+    </item>
+    <item index="21">
+      <wid>314,105</wid>
+      <tid>1659</tid>
+    </item>
+    <item index="22">
+      <wid>313,105</wid>
+      <tid>1658</tid>
+    </item>
+  </vocabulary>
+</root>

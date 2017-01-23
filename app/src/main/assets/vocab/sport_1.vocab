@@ -1,0 +1,57 @@
+<root>
+  <category>sport</category>
+  <vocabulary>
+    <item index="0">
+      <wid>328,101</wid>
+      <tid>251</tid>
+    </item>
+    <item index="1">
+      <wid>329,101</wid>
+      <tid>252</tid>
+    </item>
+    <item index="2">
+      <wid>330,101</wid>
+      <tid>253,254</tid>
+    </item>
+    <item index="3">
+      <wid>331,101</wid>
+      <tid>255</tid>
+    </item>
+    <item index="4">
+      <wid>327,101</wid>
+      <tid>250</tid>
+    </item>
+    <item index="5">
+      <wid>326,101</wid>
+      <tid>249</tid>
+    </item>
+    <item index="6">
+      <wid>325,101</wid>
+      <tid>248</tid>
+    </item>
+    <item index="7">
+      <wid>337,101</wid>
+      <tid>260</tid>
+    </item>
+    <item index="8">
+      <wid>339,101</wid>
+      <tid>261</tid>
+    </item>
+    <item index="9">
+      <wid>335,101</wid>
+      <tid>258</tid>
+    </item>
+    <item index="10">
+      <wid>336,101</wid>
+      <tid>259</tid>
+    </item>
+    <item index="11">
+      <wid>334,101</wid>
+      <tid>257</tid>
+    </item>
+    <item index="12">
+      <wid>333,101</wid>
+      <tid>256</tid>
+    </item>
+  </vocabulary>
+</root>

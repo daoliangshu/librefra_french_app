@@ -1,0 +1,97 @@
+<root>
+  <category>no</category>
+  <vocabulary>
+    <item index="0">
+      <wid>939,101</wid>
+      <tid>1723</tid>
+    </item>
+    <item index="1">
+      <wid>940,101</wid>
+      <tid>1724</tid>
+    </item>
+    <item index="2">
+      <wid>950,101</wid>
+      <tid>1737</tid>
+    </item>
+    <item index="3">
+      <wid>88,102</wid>
+      <tid>334,336</tid>
+    </item>
+    <item index="4">
+      <wid>336,105</wid>
+      <tid>1746</tid>
+    </item>
+    <item index="5">
+      <wid>337,105</wid>
+      <tid>1747</tid>
+    </item>
+    <item index="6">
+      <wid>203,101</wid>
+      <tid>1742</tid>
+    </item>
+    <item index="7">
+      <wid>634,101</wid>
+      <tid>1188</tid>
+    </item>
+    <item index="8">
+      <wid>633,101</wid>
+      <tid>1187</tid>
+    </item>
+    <item index="9">
+      <wid>515,101</wid>
+      <tid>1740</tid>
+    </item>
+    <item index="10">
+      <wid>954,101</wid>
+      <tid>1743</tid>
+    </item>
+    <item index="11">
+      <wid>296,101</wid>
+      <tid>57,58</tid>
+    </item>
+    <item index="12">
+      <wid>669,101</wid>
+      <tid>1233</tid>
+    </item>
+    <item index="13">
+      <wid>953,101</wid>
+      <tid>1741</tid>
+    </item>
+    <item index="14">
+      <wid>113,101</wid>
+      <tid>92</tid>
+    </item>
+    <item index="15">
+      <wid>955,101</wid>
+      <tid>1744</tid>
+    </item>
+    <item index="16">
+      <wid>224,101</wid>
+      <tid>1745</tid>
+    </item>
+    <item index="17">
+      <wid>181,101</wid>
+      <tid>724</tid>
+    </item>
+    <item index="18">
+      <wid>338,105</wid>
+      <tid>1748</tid>
+    </item>
+    <item index="19">
+      <wid>268,101</wid>
+      <tid>96</tid>
+    </item>
+    <item index="20">
+      <wid>231,102</wid>
+      <tid>921</tid>
+    </item>
+    <item index="21">
+      <wid>951,101</wid>
+      <tid>1738</tid>
+    </item>
+    <category>no</category>
+    <title_fr>la maison</title_fr>
+    <title_zh>&#25151;&#23376;</title_zh>
+    <level>1</level>
+  </vocabulary>
+</root>

@@ -1,0 +1,113 @@
+<lessons>
+    <unit>
+        <title>Qui suis-je ?</title>
+        <title_zh>&#25105;&#26159;&#35504; ?</title_zh>
+        <title_zh>[None]</title_zh>
+        <content_fr>
+            <item>
+                <index>0</index>
+                <ctn>Bonjour tout le monde !</ctn>
+            </item>
+            <item>
+                <index>1</index>
+                <ctn>Comment allez-vous ?</ctn>
+            </item>
+            <item>
+                <index>2</index>
+                <ctn>Vous ne me connaissez pas encore,</ctn>
+            </item>
+            <item>
+                <index>3</index>
+                <ctn>donc je vais vous dire qui je suis.</ctn>
+            </item>
+            <item>
+                <index>4</index>
+                <ctn>[default value]</ctn>
+            </item>
+            <item>
+                <index>5</index>
+                <ctn>[default value]</ctn>
+            </item>
+            <item>
+                <index>6</index>
+                <ctn>[default value]</ctn>
+            </item>
+            <item>
+                <index>7</index>
+                <ctn>[default value]</ctn>
+            </item>
+            <item>
+                <index>8</index>
+                <ctn>[default value]</ctn>
+            </item>
+            <item>
+                <index>9</index>
+                <ctn>[default value]</ctn>
+            </item>
+        </content_fr>
+        <content_zh>
+            <item>
+                <index>0</index>
+                <ctn>&#22823;&#23478;&#22909; &#65281;</ctn>
+            </item>
+            <item>
+                <index>1</index>
+                <ctn>&#20320;&#20497;&#36942;&#24471;&#22909; &#65311;</ctn>
+            </item>
+            <item>
+                <index>2</index>
+                <ctn>[default value]</ctn>
+            </item>
+            <item>
+                <index>3</index>
+                <ctn>[default value]</ctn>
+            </item>
+            <item>
+                <index>4</index>
+                <ctn>[default value]</ctn>
+            </item>
+            <item>
+                <index>5</index>
+                <ctn>[default value]</ctn>
+            </item>
+            <item>
+                <index>6</index>
+                <ctn>[default value]</ctn>
+            </item>
+            <item>
+                <index>7</index>
+                <ctn>[default value]</ctn>
+            </item>
+            <item>
+                <index>8</index>
+                <ctn>[default value]</ctn>
+            </item>
+            <item>
+                <index>9</index>
+                <ctn>[default value]</ctn>
+            </item>
+        </content_zh>
+        <activity_list>
+            <activity index="0" type="multiplechoices">
+                <title>titre bidon</title>
+                <wave index="0" correct="0">
+                    <title>No face</title>
+                    <item index="0">a</item>
+                    <item index="1">f</item>
+                    <item index="2">d</item>
+                    <item index="3">f</item>
+                </wave>
+            </activity>
+        </activity_list>
+        <vocabulary>
+            <item index="0">
+                <wid>4</wid>
+                <tid>5</tid>
+            </item>
+            <item index="1">
+                <wid>4</wid>
+                <tid>6</tid>
+            </item>
+        </vocabulary>
+    </unit>
+</lessons>

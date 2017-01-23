@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<dialog>
+    <lesson_thematic>Thematique</lesson_thematic>
+    <lesson_title>Lesson title</lesson_title>
+    <lesson_size>3</lesson_size>
+
+    <content_fr>
+        <item>item1</item>
+        <item>item2</item>
+        <item>item3</item>
+    </content_fr>
+
+</dialog>

@@ -1,0 +1,103 @@
+<lessons>
+  <unit level="0" type="normal" theme="">
+    <title>Nouvelle Le&#231;on</title>
+    <title_zh>&#26032;&#30340;&#35506;&#31243;</title_zh>
+    <title_zh>&#26032;&#30340;&#35506;&#31243;</title_zh>
+    <content_fr><item><index>0</index><content>Ce matin, il faisait froid dehors.</content></item></content_fr>
+    <content_zh><item><index>0</index><content>&#20170;&#22825;&#26089;&#19978;&#37117;&#24456;&#20919;</content></item></content_zh>
+    <activity_list>
+      <activity type="multiplechoices" index="0">
+        <title>Basique_01</title>
+        <title_zh>&#22522;&#30990;&#8212;&#8212;01</title_zh>
+        <wave index="0" correct="0" type="multiplechoices" spd="5">
+          <title>&#20320;&#22909;&#65281;
+</title>
+          <hint>&#27861;&#25991;&#30340;&#8221;&#20320;&#22909;&#8220;&#26159;&#31069;&#21029;&#20154;&#22909;&#26085;&#23376;&#30340;&#24847;&#24605;.</hint>
+          <info></info>
+          <item index="0">Bonjour!
+</item>
+          <item index="1">Quoi?
+</item>
+          <item index="2">Au revoir!
+</item>
+          <item index="3">Merci!
+</item>
+        </wave>
+        <wave index="1" order="1,3,0,2" type="order" spd="1">
+          <title>&#35531;&#25490;&#24207;&#65306; &#8221;&#25105;&#20170;&#22825;&#36023;&#20102;&#29275;&#22902;&#8220; 
+</title>
+          <hint>Sujet + verbe + compl&#233;ment</hint>
+          <info></info>
+          <item index="0">j'ai
+</item>
+          <item index="1">du lait
+</item>
+          <item index="2">Aujourd'hui,
+</item>
+          <item index="3">achet&#233;
+</item>
+        </wave>
+        <wave index="2" order="3,0,1,2" type="order" spd="2">
+          <title>&#35531;&#25490;&#24207;&#65306; &#24478;&#26368;&#26089;&#21040;&#26368;&#26202; &#65281;
+</title>
+          <hint></hint>
+          <info></info>
+          <item index="0">le soir
+</item>
+          <item index="1">le matin
+</item>
+          <item index="2">midi
+</item>
+          <item index="3">l'apr&#232;s-midi
+</item>
+        </wave>
+        <wave index="3" correct="3" type="multiplechoices" spd="4">
+          <title>&#21738;&#19968;&#20491;&#19981;&#21512;&#36969;: 
+</title>
+          <hint>&#21205;&#29289;</hint>
+          <info></info>
+          <item index="0">le cheval
+</item>
+          <item index="1">le canard
+</item>
+          <item index="2">l'oie
+</item>
+          <item index="3">la fraise
+</item>
+        </wave>
+        <wave index="4" correct="0,1,3" type="multiplechoices" spd="2">
+          <title>"Que veux-tu manger?" &#35531;&#36984;&#25799;&#21512;&#36969;&#30340;&#22238;&#31572;(&#22810;&#36984;)
+</title>
+          <hint>&#20320;&#24819;&#21507;&#20160;&#40636;&#65311;</hint>
+          <info></info>
+          <item index="0">du fromage s'il-vous-pla&#238;t!
+</item>
+          <item index="1">Je n'ai pas faim merci!
+</item>
+          <item index="2">Je ne sais pas qui c'est.
+</item>
+          <item index="3">Des spaghetti, comme toujours!
+</item>
+        </wave>
+        <wave index="5" order="2,3,1,0" type="order" spd="3">
+          <title>&#35531;&#25490;&#24207;&#65306; &#8220;&#25105;&#22312;&#33274;&#21271;&#24037;&#20316;&#12290;&#8221;
+</title>
+          <hint>Sujet + Verbe + Pr&#233;position + Lieu</hint>
+          <info></info>
+          <item index="0">&#224;
+</item>
+          <item index="1">Ta&#239;pei
+</item>
+          <item index="2">travaille
+</item>
+          <item index="3">je
+</item>
+        </wave>
+      </activity>
+    </activity_list>
+    <vocabulary>
+      <category>no</category>
+    </vocabulary>
+    <explanation/>
+  </unit>
+</lessons>
