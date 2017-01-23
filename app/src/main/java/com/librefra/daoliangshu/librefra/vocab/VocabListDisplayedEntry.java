@@ -26,7 +26,7 @@ public class VocabListDisplayedEntry extends RelativeLayout {
     private TextView tvVocCount;
     private TextView tvThematic;
     private TextView tvLevel;
-    private TextView tvContentType; // default:Nope, possible choice: Grammar, Vocabular, Mixed
+    private TextView tvContentType; // default:Nope, possible choice: Grammar, Vocabulary, Mixed
 
     public VocabListDisplayedEntry(Context c, final VocabularyActivity parentActivity) {
         super(c);

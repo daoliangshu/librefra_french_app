@@ -66,7 +66,6 @@ public class VocabChooserView extends LinearLayout {
         for (String fn : list) {
             if (count != 0) vocFileNames += ",";
             count++;
-            //vocfilenames += "librefra_vocab/" + fn;
             vocFileNames += "vocab/" + fn;
         }
         sortWay = getResources().getStringArray(R.array.lesson_search_way);
@@ -291,7 +290,7 @@ public class VocabChooserView extends LinearLayout {
         courseSelectionView2.addView(this);
     }
 
-    public void setParentActivity(VocabularyActivity vocAtivity) {
-        this.parentActivity = vocAtivity;
+    public void setParentActivity(VocabularyActivity vocActivity) {
+        this.parentActivity = vocActivity;
     }
 }
