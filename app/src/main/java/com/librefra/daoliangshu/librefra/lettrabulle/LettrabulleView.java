@@ -422,7 +422,8 @@ public class LettrabulleView extends SurfaceView implements SurfaceHolder.Callba
             Log.e("ERR", "myContext is null in view ...");
         }
         getThread().mySurfaceHolder = holder;
-        thread.setSurfaceSize(width, height);
+        if (thread != null)
+            thread.setSurfaceSize(width, height);
     }
 
     @Override

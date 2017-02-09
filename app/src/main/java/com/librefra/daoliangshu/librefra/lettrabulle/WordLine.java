@@ -208,7 +208,9 @@ public class WordLine {
     }
 
     public int getTop() {
-        return (int) rectfLine.top;
+        if (rectfLine != null)
+            return (int) rectfLine.top;
+        else return -1;
     }
 
     public int getColorIndex() {

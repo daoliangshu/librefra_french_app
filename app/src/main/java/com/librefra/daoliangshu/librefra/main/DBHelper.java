@@ -245,7 +245,7 @@ public class DBHelper extends SQLiteOpenHelper {
         if (tbOther) {
             if (tbCount > 0) subpref += " UNION ";
             subpref += "SELECT * FROM ( SELECT * FROM " + table_map.get(DBHelper.OTHER) +
-                    " WHERE word LIKE '" + preSearch + startWithString + postSearch + "' LIMIT 20 )";
+                    " WHERE word LIKE \"" + preSearch + startWithString + postSearch + "\" LIMIT 20 )";
         }
         if (subpref.equals("")) return null;
         String prefix2 = "SELECT * FROM ( " + subpref +

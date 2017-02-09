@@ -1,35 +1,36 @@
 package com.librefra.daoliangshu.librefra.daoliangboom;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.ViewFlipper;
 
 import com.librefra.daoliangshu.librefra.R;
-import com.librefra.daoliangshu.librefra.activity_manager.GameInfoPanel;
+import com.librefra.daoliangshu.librefra.activity_manager.GameSettingsSlideFragment;
+import com.librefra.daoliangshu.librefra.activity_manager.GameStatusSlideFragment;
+import com.librefra.daoliangshu.librefra.activity_manager.ZoomOutPageTransformer;
 import com.librefra.daoliangshu.librefra.main.DBHelper;
 
 import java.io.IOException;
-import java.util.Timer;
-import java.util.TimerTask;
 
-public class TirAChoix_GameActivity extends Activity {
+public class TirAChoix_GameActivity extends AppCompatActivity {
 
     private String word;
     private TirAChoixView gameView;
-    private GameInfoPanel infoPanel;
-    private Timer timer;
-    private boolean timeRunning = true;
-    private int timerValue;
-    private int maxTimerValue;
     private DBHelper dbHelper;
+
+    private GameSettingsSlideFragment gameSettings;
+    private GameStatusSlideFragment gameStatus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,50 +55,6 @@ public class TirAChoix_GameActivity extends Activity {
             exp.printStackTrace();
             System.exit(1);
         }
-        /* Top information panel*/
-        infoPanel = new GameInfoPanel(
-                getApplicationContext(),
-                (TextView) findViewById(R.id.dlb_word_to_guess),
-                (TextView) findViewById(R.id.dlb_trans_of_word),
-                (TextView) findViewById(R.id.dlb_time),
-                (TextView) findViewById(R.id.dlb_score));
-
-        Button settings = (Button) findViewById(R.id.dlb_settings);
-        settings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        ViewFlipper vf = (ViewFlipper) findViewById(R.id.dlb_head_flipper);
-                        vf.setDisplayedChild(1);
-                    }
-                });
-            }
-        });
-        timerValue = 0;
-        maxTimerValue = 9000;
-        final Thread timerUpdateThread = new Thread(new Runnable() {
-            public void run() {
-                if (timeRunning) {
-                    timerValue += 1;
-                    if (timerValue >= maxTimerValue) {
-                        timerValue = 0;
-                        infoPanel.setTimer(timerValue);
-                    } else {
-                        infoPanel.incrementTimer();
-                    }
-                }
-
-            }
-        });
-        timer = new Timer();
-        TimerTask timerTaskObj = new TimerTask() {
-            public void run() {
-                runOnUiThread(timerUpdateThread);
-            }
-        };
-        timer.schedule(timerTaskObj, 0, 1500);
 
         /*---- Flip View ---*/
         Button retryButton = (Button) findViewById(R.id.dlb_retry_btn);
@@ -114,24 +71,6 @@ public class TirAChoix_GameActivity extends Activity {
             }
         });
 
-        int[] backButtonId = {R.id.dlb_back, R.id.dlb_back2};
-        for (int i = 0; i < backButtonId.length; i++) {
-            Button back = (Button) findViewById(backButtonId[i]);
-            back.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            ViewFlipper vf = (ViewFlipper) findViewById(R.id.dlb_head_flipper);
-                            vf.setDisplayedChild(0);
-                        }
-                    });
-                }
-            });
-        }
-
-
         retryButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -139,67 +78,25 @@ public class TirAChoix_GameActivity extends Activity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        timeRunning = true;
+                        gameStatus.restartTimer();
                         View v1 = findViewById(R.id.game_layout);
-
                         View v = findViewById(R.id.dlb_game_over_view);
                         v.setVisibility(View.GONE);
                         gameView.resetLife();
                         gameView.setRunning(true);
                         v1.setVisibility(View.VISIBLE);
-                        timerValue = 0;
                     }
                 });
             }
         });
+        ViewPager mGameMenuPager = (ViewPager) findViewById(R.id.game_menu_pager);
+        PagerAdapter mPagerAdapterMain = new SlidePagerAdapter(getSupportFragmentManager()
+        );
+        mGameMenuPager.setAdapter(mPagerAdapterMain);
+        mGameMenuPager.setPageTransformer(true, new ZoomOutPageTransformer());
 
 
-        /*--------_Speed Settings -------------*/
-        RadioGroup radioGroupSpeed = (RadioGroup) findViewById(R.id.radioGroupSpeed);
 
-        int currSpeed = DLB_Config.getSpeedCode();
-        int selectedRadio;
-        switch (currSpeed) {
-            case 0:
-                selectedRadio = R.id.radio_slow;
-                break;
-            case 2:
-                selectedRadio = R.id.radio_fast;
-                break;
-            default:
-                selectedRadio = R.id.radio_medium;
-                break;
-        }
-        RadioButton selectedRdb = (RadioButton) findViewById(selectedRadio);
-        selectedRdb.setChecked(true);
-
-
-        radioGroupSpeed.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                switch (checkedId) {
-                    case R.id.radio_slow:
-                        DLB_Config.currentSpeed = DLB_Config.SPEED_SLOW;
-                        break;
-                    case R.id.radio_medium:
-                        DLB_Config.currentSpeed = DLB_Config.SPEED_MEDIUM;
-                        break;
-                    case R.id.radio_fast:
-                        DLB_Config.currentSpeed = DLB_Config.SPEED_FAST;
-                        break;
-                    default:
-                        DLB_Config.currentSpeed = DLB_Config.SPEED_MEDIUM;
-                }
-            }
-        });
-
-        Button showHintButton = (Button) findViewById(R.id.dlb_show_hint_button);
-        showHintButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                displayHint();
-            }
-        });
     }
 
     @Override
@@ -235,7 +132,7 @@ public class TirAChoix_GameActivity extends Activity {
             @Override
             public void run() {
                 int scoreToAdd = (int) (baseInt * weight);
-                infoPanel.incrementScore(scoreToAdd);
+                gameStatus.incrementScore(scoreToAdd);
             }
         });
     }
@@ -244,18 +141,16 @@ public class TirAChoix_GameActivity extends Activity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                timeRunning = false;
+                gameStatus.pauseTimer();
                 View v = findViewById(R.id.dlb_game_over_view);
                 if (v.getVisibility() == View.VISIBLE) return;
                 View v1 = findViewById(R.id.game_layout);
                 v1.setVisibility(View.GONE);
 
                 v.setVisibility(View.VISIBLE);
-
-                timerValue = 0;
                 TextView tvScore = (TextView) findViewById(R.id.dlb_score_gameover);
-                tvScore.setText(String.valueOf(String.valueOf(infoPanel.getScore())));
-                infoPanel.setScore(0);
+                tvScore.setText(String.valueOf(String.valueOf(gameStatus.getScore())));
+                gameStatus.setScore(0);
             }
         });
     }
@@ -263,7 +158,7 @@ public class TirAChoix_GameActivity extends Activity {
 
     Thread thread = new Thread(new Runnable() {
         public void run() {
-            infoPanel.setWord(word, true);
+            gameStatus.setWord(word, true);
         }
     });
 
@@ -272,41 +167,42 @@ public class TirAChoix_GameActivity extends Activity {
         runOnUiThread(thread);
     }
 
-    public void setHintButtonState(boolean state) {
-        if (state) {
-            runOnUiThread(new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    Button hintButton = (Button) findViewById(R.id.dlb_show_hint_button);
-                    hintButton.setVisibility(View.VISIBLE);
-                }
-            }));
+    private class SlidePagerAdapter extends FragmentStatePagerAdapter {
+        private Fragment mCurrentFragment;
+
+        public SlidePagerAdapter(FragmentManager fm) {
+            super(fm);
         }
-    }
 
-    public void displayHint() {
-        final String curHint = gameView.getCurrentHint();
-        if (curHint == null) return;
-        runOnUiThread(new Thread(new Runnable() {
-            @Override
-            public void run() {
-                TextView tvHint = (TextView) findViewById(R.id.textview_hint);
-                tvHint.setText(curHint);
-                ViewFlipper vf = (ViewFlipper) findViewById(R.id.dlb_head_flipper);
-                vf.setDisplayedChild(2);
-
+        @Override
+        public Fragment getItem(int position) {
+            switch (position) {
+                case 0:
+                    GameStatusSlideFragment res = new GameStatusSlideFragment();
+                    gameStatus = res;
+                    return res;
+                case 1:
+                    GameSettingsSlideFragment res2 = new GameSettingsSlideFragment();
+                    gameSettings = res2;
+                    return res2;
             }
-        }));
-    }
+            return null;
+        }
 
-    public void restoreMainInfoDisplay() {
-        runOnUiThread(new Thread(new Runnable() {
-            @Override
-            public void run() {
-                ViewFlipper vf = (ViewFlipper) findViewById(R.id.dlb_head_flipper);
-                vf.setDisplayedChild(0);
-            }
-        }));
+
+        public Fragment getCurrentFragment() {
+            return mCurrentFragment;
+        }
+
+        @Override
+        public void setPrimaryItem(ViewGroup container, int position, Object object) {
+            super.setPrimaryItem(container, position, object);
+        }
+
+        @Override
+        public int getCount() {
+            return 2;
+        }
     }
 
 

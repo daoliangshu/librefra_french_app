@@ -7,6 +7,7 @@
     <string name="menu_conjugaison">動詞變化 Conjugaison</string>
     <string name="menu_dictionary">小字典 Petit Dictionaire</string>
     <string name="menu_multiplechoices">多選題 QCM</string>
+    <string name="menu_lesson">Leçons</string>
     <string name="menu_settings">設定 \nConfigurations</string>
     <string name="menu_reader">閱讀器 Assistant de Lecture</string>
     <string name="start">開始</string>

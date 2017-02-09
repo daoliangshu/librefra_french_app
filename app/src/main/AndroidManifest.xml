@@ -1,0 +1,63 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.librefra.daoliangshu.librefra">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />"/>
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:installLocation="preferExternal"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name="com.librefra.daoliangshu.librefra.main.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.librefra.daoliangshu.librefra.verb.ConjugaisonActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.librefra.daoliangshu.librefra.lettrabulle.LettrabulleActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.librefra.daoliangshu.librefra.main.MainMenuSelectionActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.librefra.daoliangshu.librefra.tools.GlobalSettingActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.librefra.daoliangshu.librefra.activity_manager.ActivityChooser"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.librefra.daoliangshu.librefra.vocab.VocabularyActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.librefra.daoliangshu.librefra.lf_lesson.LessonActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name="com.librefra.daoliangshu.librefra.daoliangboom.TirAChoix_GameActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name="com.librefra.daoliangshu.librefra.lf_lesson.LessonChooserActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.librefra.daoliangshu.librefra.basic_dic.BasicDictionaryActivity"
+            android:windowSoftInputMode="adjustPan|stateVisible"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.librefra.daoliangshu.librefra.lf_reader.FrenchReader"
+            android:label="@string/app_name"></activity>
+
+    </application>
+
+</manifest>

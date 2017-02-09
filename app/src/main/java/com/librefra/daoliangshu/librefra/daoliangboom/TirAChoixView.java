@@ -204,8 +204,6 @@ public class TirAChoixView extends SurfaceView implements SurfaceHolder.Callback
                     if (res) {
                          /* When a new wave need to be set */
                         currentWaveIndex = Math.abs(rand.nextInt() % curWaveSet.getWaveCount());
-
-                        updateHintButtonState();
                         shuffleRandMap();
                         setNewWave();
                     }
@@ -375,8 +373,6 @@ public class TirAChoixView extends SurfaceView implements SurfaceHolder.Callback
                             curWaveSet.getWave(0), currentChoiceMap, moveUnitX);
                     currentWaveIndex = 0;
                     correctChoiceList = curWaveSet.getWave(currentWaveIndex).getCorrectList();
-
-                    updateHintButtonState();
                 }
 
                     /*----------------------------------------*/
@@ -589,21 +585,6 @@ public class TirAChoixView extends SurfaceView implements SurfaceHolder.Callback
 
     public ArrayList<Integer> getChoiceMap() {
         return this.currentChoiceMap;
-    }
-
-    public void updateHintButtonState() {
-        if (currentWaveIndex < 0 || currentWaveIndex >= curWaveSet.getWaveCount()) {
-            rootActivity.setHintButtonState(false);
-            return;
-        }
-        if (curWaveSet.getWave(currentWaveIndex).getHint() != null &&
-                !curWaveSet.getWave(currentWaveIndex).getHint().trim().equals("")) {
-            rootActivity.setHintButtonState(true);
-
-        } else {
-            rootActivity.setHintButtonState(false);
-        }
-        rootActivity.restoreMainInfoDisplay();
     }
 }
 
